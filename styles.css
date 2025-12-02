@@ -46,3 +46,116 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+
+
+body{
+    margin: 30px;
+    font-family:sans-serif;
+    font-size: 18px;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+h2{
+    font-size: 28px;
+    font-weight: bold;
+    padding-bottom: 1px;
+    margin-bottom: 5px;
+}
+
+h3{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+h4{
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+
+
+ul{
+    margin-left: 30px;
+    border: 1px bold;
+}
+
+li{
+    list-style-type: circle;
+    line-height: 1.2;
+    margin-bottom: 2px;
+}
+
+
+
+.info{
+    margin-bottom: 20px;
+}
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 30px
+}
+
+.contact .box{
+    display: block;
+    margin-right: 20px;
+}
+
+.contact .box img{
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.contact .box a{
+    vertical-align:middle;
+}
+
+.contact .box span{
+    vertical-align: middle;
+}
+
+
+.edu h2{
+    padding-bottom: 3pt;
+    border-bottom: 1pt solid black;
+}
+
+.edu1{
+    display: flex;
+    align-items: start;
+}
+
+.edu2{
+    display: flex;
+    align-items: start;
+}
+
+.time{
+    color: grey;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.edu_info .box{
+    margin: 10px;
+}
+
+
+.edu_info .box span{
+    font-weight: bold;
+}
