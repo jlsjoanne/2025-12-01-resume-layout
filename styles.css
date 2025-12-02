@@ -145,8 +145,6 @@ li{
     margin-bottom: 10px;
 }
 
-
-
 .time{
     color: grey;
     margin-right: 10px;
@@ -164,5 +162,16 @@ li{
 
 .info .box span{
     font-weight: bold;
+}
+
+
+.subcategory2{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.other{
+    width: 45%;
 }
 
