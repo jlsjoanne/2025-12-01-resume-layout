@@ -99,7 +99,7 @@ li{
 
 
 
-.info{
+.header{
     margin-bottom: 20px;
 }
 
@@ -129,33 +129,40 @@ li{
     vertical-align: middle;
 }
 
-
-.edu h2{
-    padding-bottom: 3pt;
-    border-bottom: 1pt solid black;
+.category{
+    border-bottom: 20px;
+    border-top: 20px;
 }
 
-.edu1{
+.category h2{
+    padding-bottom: 3px;
+    border-bottom: 1px solid black;
+}
+
+.subcategory{
     display: flex;
     align-items: start;
+    margin-bottom: 10px;
 }
 
-.edu2{
-    display: flex;
-    align-items: start;
-}
+
 
 .time{
     color: grey;
-    margin-right: 20px;
+    margin-right: 10px;
     font-size: 18px;
+    width: 15%;
 }
 
-.edu_info .box{
+.info{
+    width: 85%;
+}
+
+.info .box{
     margin: 10px;
 }
 
-
-.edu_info .box span{
+.info .box span{
     font-weight: bold;
 }
+
