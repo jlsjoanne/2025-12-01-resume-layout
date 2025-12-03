@@ -106,8 +106,8 @@ li{
 .contact{
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
-    height: 30px
+    margin-bottom: 30px;
+    flex-wrap: wrap;
 }
 
 .contact .box{
@@ -137,19 +137,20 @@ li{
 .category h2{
     padding-bottom: 3px;
     border-bottom: 1px solid black;
+    margin-top: 30px;
 }
 
 .subcategory{
     display: flex;
     align-items: start;
     margin-bottom: 10px;
+    flex-wrap:wrap;
 }
 
 .time{
     color: grey;
-    margin-right: 10px;
     font-size: 18px;
-    width: 15%;
+    margin-right: 30px;
 }
 
 .info{
@@ -170,6 +171,7 @@ li{
     display: flex;
     justify-content: flex-start;
     margin-bottom: 10px;
+    flex-wrap: wrap;
 }
 
 .other{
