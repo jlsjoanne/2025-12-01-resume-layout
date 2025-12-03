@@ -84,8 +84,6 @@ h4{
     margin-bottom: 5px;
 }
 
-
-
 ul{
     margin-left: 30px;
     border: 1px bold;
@@ -105,7 +103,7 @@ li{
 
 .contact{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-bottom: 30px;
     flex-wrap: wrap;
 }
@@ -116,14 +114,21 @@ li{
 }
 
 .contact .box img{
-    width: 24px;
-    height: 24px;
+    max-width: 24px;
+    max-height: auto;
     vertical-align: middle;
 }
 
 .contact .box a{
     vertical-align:middle;
+    color: black;
 }
+
+.contact .box a:hover{
+    color: blue;
+}
+
+
 
 .contact .box span{
     vertical-align: middle;
@@ -149,12 +154,15 @@ li{
 .time{
     color: grey;
     font-size: 18px;
-    margin-right: 30px;
+    margin-right: 20px;
+    max-width: 15%;
 }
 
+
 .info{
-    width: 85%;
+    max-width: 80%;
 }
+
 
 .info .box{
     margin: 10px;
@@ -175,10 +183,22 @@ li{
 
 .other{
     margin-right: 30px;
-    /*width: 40%;*/
 }
 
 .other span{
     text-decoration: underline;
     font-weight: bold;
+}
+
+@media(max-width: 650px){
+    .subcategory{
+        flex-wrap: wrap;
+    }
+
+    .time{
+        max-width: 100%;
+    }
+    .info{
+        max-width: 100%;
+    }
 }
