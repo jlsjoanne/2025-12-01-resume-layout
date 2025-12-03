@@ -162,16 +162,22 @@ li{
 
 .info .box span{
     font-weight: bold;
+    text-decoration: underline;
 }
 
 
 .subcategory2{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-bottom: 10px;
 }
 
 .other{
-    width: 45%;
+    margin-right: 30px;
+    width: 40%;
 }
 
+.other span{
+    text-decoration: underline;
+    font-weight: bold;
+}
