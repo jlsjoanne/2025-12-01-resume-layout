@@ -176,9 +176,8 @@ li{
 
 .subcategory2{
     display: flex;
-    justify-content: flex-start;
     margin-bottom: 10px;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
 }
 
 .other{
@@ -191,6 +190,7 @@ li{
 }
 
 @media(max-width: 650px){
+    
     .subcategory{
         flex-wrap: wrap;
     }
@@ -200,5 +200,14 @@ li{
     }
     .info{
         max-width: 100%;
+    }
+
+    .subcategory2{
+        flex-wrap: wrap;
+    }
+
+    .other{
+        width: 100%;
+        margin-right: 0;
     }
 }
