@@ -86,7 +86,6 @@ h4{
 
 ul{
     margin-left: 30px;
-    border: 1px bold;
 }
 
 li{
@@ -121,7 +120,7 @@ li{
 
 .contact .box a{
     vertical-align:middle;
-    color: black;
+    color: grey;
 }
 
 .contact .box a:hover{
