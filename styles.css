@@ -177,7 +177,6 @@ li{
 .subcategory2{
     display: flex;
     margin-bottom: 10px;
-    /*flex-wrap: wrap;*/
 }
 
 .other{
@@ -189,7 +188,7 @@ li{
     font-weight: bold;
 }
 
-@media(max-width: 650px){
+@media(max-width: 600px){
     
     .subcategory{
         flex-wrap: wrap;
@@ -198,6 +197,7 @@ li{
     .time{
         max-width: 100%;
     }
+
     .info{
         max-width: 100%;
     }
