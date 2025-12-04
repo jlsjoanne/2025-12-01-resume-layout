@@ -156,7 +156,6 @@ li{
     font-size: 18px;
     margin-right: 20px;
     max-width: 15%;
-    text-decoration: none;
 }
 
 
@@ -198,6 +197,7 @@ li{
 
     .time{
         max-width: 100%;
+        text-decoration: none;
     }
     .info{
         max-width: 100%;
