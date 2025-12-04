@@ -149,18 +149,19 @@ li{
     display: flex;
     align-items: start;
     margin-bottom: 10px;
+    justify-content: flex-start;
 }
 
 .time{
     color: grey;
     font-size: 18px;
     margin-right: 20px;
-    max-width: 15%;
+    width: 200px;
 }
 
 
 .info{
-    max-width: 80%;
+    width: 1080px;
 }
 
 
@@ -188,7 +189,7 @@ li{
     font-weight: bold;
 }
 
-@media(max-width: 600px){
+@media(max-width: 650px){
     
     .subcategory{
         flex-wrap: wrap;
