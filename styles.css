@@ -196,6 +196,7 @@ li{
 
     .time{
         max-width: 100%;
+        pointer-events: none;
     }
 
     .info{
