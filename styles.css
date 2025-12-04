@@ -196,6 +196,8 @@ li{
 
     .time{
         max-width: 100%;
+        color: gray;
+        text-decoration: none;
     }
 
     .info{
