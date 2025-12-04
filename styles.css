@@ -196,7 +196,9 @@ li{
 
     .time{
         max-width: 100%;
-        pointer-events: none;  
+        pointer-events: none;
+        color: grey;
+        text-decoration: none;
     }
 
     .info{
