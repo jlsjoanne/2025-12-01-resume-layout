@@ -9,9 +9,9 @@
 <body>
     <header>
         <h2>蕭主安 Joanne Hsiao</h2>
-        <p>2023年末取得美國萊斯大學計算科學與工程碩士學位(Master of Computational Science and Engineering)</p>
-        <p>學士畢業後累積約一年半資料分析師經歷，熟悉Python及R語言，與Microsoft SQL Server資料庫應用</p>
-        <p>目前在高雄參加後端工程師培訓，以實作專案方式，培養C＃、ASP.NET及資料庫建置與雲端部署相關技能</p>
+        <p>Rice University 計算科學與工程碩士，具資料科學、演算法、資訊檢索與 AI/ML 相關訓練。</p>
+        <p>具約一年半資料分析與資料處理經驗，使用 Python、R 與 Microsoft SQL Server 完成自動化資料蒐集、模型建置與資料整併。</p>
+        <p>目前參加後端工程師培訓，已完成 ASP.NET MVC 後台 CMS 專題，並於協作專題負責 ASP.NET Core Web API 開發。</p>
         <div class="contact">
             <div class="box">
                 <img src="./assets/mail.png" alt="email">
@@ -34,7 +34,7 @@
         </div>
     </header>
 
-    <section>
+    <section class="education">
         <h2><img src="./assets/school.png" alt="education"> 學歷 Education</h2>
         <div class="detail_content">
             <div class="time">
@@ -44,44 +44,51 @@
                 <h3>Rice University 萊斯大學</h3>
                 <h4>Master of Computational Science and Engineering</h4>
                 <div class="box">
-                    <span>核心課程</span>
                     <ul>
-                        <li>Data Science, Numerical Analysis, Algorithms, Neural Machine Learning, Information Retrieval, Deep Learning</li>
+                        <li>相關課程：Algorithms, Data Science, Information Retrieval, Neural Machine Learning, Deep Learning</li>
+                        <li>課程專題：使用 R 建立第二型糖尿病風險預測模型，結合 Self Organizing Map 分群與自實作雙層 Neural Networks，準確率較先前研究結果提升逾 20%。</li>
                     </ul>
                 </div>
-                <div class="box">
-                    <span>課程專案</span>
-                    <ul>
-                        <li>
-                            <p><u>Analysis of Motor Vehicle Collisions in New York City | R</u></p>
-                            <p>分析NYC Motor Vehicle Collisions資料，研究不同因素對事故頻率影響，並以此提出三項具體改善建議。</p>
-                        </li>
-                        <li>
-                            <p><u>Newsgroup Text Classification | Python, Spark, Numpy</u></p>
-                            <p>以訓練資料產出2萬個高頻詞為語料庫，訓練k-NN分類器預測新聞分群，測試資料準確率可達100%。</p>
-                        </li>
-                    </ul>
-                </div>
-                <ul></ul>
             </div>
         </div>
         <div class="detail_content">
             <div class="time">
                 <p>09/2012~06/2017<br>Taipei, Taiwan</p>
-                </span>
             </div>
             <div class="info">
                 <h3>國立政治大學</h3>
-                <h4>統計系學士 Bachelor of Science in Statistics</h4>
-                <div class="box">
-                    <ul>
-                        <li>同時完成商學院巨量資料分析學程，並取得證書</li>
-                    </ul>
-                </div>
+                <h4>統計系學士 Bachelor of Science in Statistics｜商學院巨量資料分析學程</h4>
             </div>
         </div>
     </section>
-    <section>
+    <section class="other">
+        <h2><img src="./assets/other.png" alt="other"> 專案實作 Projects</h2>
+        <div class="detail_content">
+            <div class="time">
+                <p>12/2025~07/2026<br>高雄市</p>
+            </div>
+            <div class="info">
+                <h3>火箭隊培訓營｜後端工程師培訓暨專題實作</h3>
+                <h4>遊艇品牌官網與後台內容管理系統｜C#, ASP.NET MVC 5, EF6, SQL Server</h4>
+                <div class="box">
+                    <ul>
+                        <li>以 ASP.NET MVC 5 與 EF6 Code First 建置遊艇品牌官網及後台系統，完成遊艇、新聞、經銷商、會員與聯絡紀錄等模組的資料模型設計與 CRUD 流程。</li>
+                        <li>實作後台登入與存取保護、密碼 Salt + SHA-256 雜湊，並於聯絡表單整合 reCAPTCHA、資料保存與 SMTP Email 通知。</li>
+                        <li>設計圖片與附件上傳流程，加入檔案大小、類型與 MIME 驗證，並以 GUID 檔名及失敗清理機制維持檔案與資料庫一致性。</li>
+                    </ul>
+                </div>
+
+                <h4>與前端工程師協作中專題｜ASP.NET Core Web API, JWT/OAuth, Azure, SQL Server</h4>
+                <div class="box">
+                    <ul>
+                        <li>目前與前端工程師協作專題，負責後端 ASP.NET Core Web API 開發、JWT/OAuth 驗證、SQL Server 資料庫設計、Azure VM 部署並整合Blob Storage。</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="work">
         <h2><img src="./assets/work.png" alt="work"> 工作經歷 Work Experience</h2>
         <div class="detail_content">
             <div class="time">
@@ -92,12 +99,9 @@
                 <h4>中央研究院 調查研究專題中心</h4>
                 <div class="box">
                     <ul>
-                        <li>
-                            運用Python及Jupyter Notebook，於6個線上資料庫搜集引用單位資料的著作，較往年節省30%該項目工作時間。
-                        </li>
+                        <li>以 Python 撰寫自動化資料蒐集流程，搭配 BeautifulSoup 與 Selenium 彙整 6 個線上資料庫的引用單位著作紀錄，較往年節省 30% 作業時間。</li>
                     </ul>
                 </div>
-                </ul>
             </div>
         </div>
         <div class="detail_content">
@@ -109,9 +113,7 @@
                 <h4>國立中山大學海洋事務研究所</h4>
                 <div class="box">
                     <ul>
-                        <li>
-                            運用R語言於R Studio中分析漁獲資料，以k-means將魚種與捕獲地點分群，並利用線性模型分析漁獲量變化，產出10個以上視覺化圖表。
-                        </li>
+                        <li>使用 R 分析漁獲資料，透過 k-means 分群魚種與捕獲地點，並以線性模型評估漁獲量變化，產出 10 個以上視覺化圖表用於研究報告中。</li>
                     </ul>
                 </div>
             </div>
@@ -125,48 +127,12 @@
                 <h4>國立臺灣大學計量理論與應用研究中心</h4>
                 <div class="box">
                     <ul>
-                        <li>
-                            運用Python及Microsoft SQL Server，於VS Code中建立決策樹模型自動化判斷並將論文及專利資料庫中同一作者著作及專利進行統整，決策樹模型於測試資料上辨識結果正確率達96%。
-                        </li>
+                        <li>使用 Python（Pandas、Scikit-learn）取用 Microsoft SQL Server 中的論文與專利資料，以決策樹模型自動判斷同名作者是否為同一人，協助資料整併，測試資料正確率可達 96%。</li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="detail_content">
-            <div class="time">
-                <p>11/2016~07/2017<br>臺北市</p>
-            </div>
-            <div class="info">
-                <h3>資料分析實習生</h3>
-                <h4>智域國際股份有限公司</h4>
-                <div class="box">
-                    <ul>
-                        <li>
-                            善用Power BI工具分析政府公開資料，建立儀表板呈現城市動態，成品被公司採用於競標報告示範中，最終公司成功標得該案。
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <h2><img src="./assets/other.png" alt="other"> 其他 Other</h2>
-        <div class="detail_content">
-            <div class="time">
-                <p>12/2025~06/2026 (預計)<br>高雄市</p>
-            </div>
-            <div class="info">
-                <h3>火箭隊培訓營</h3>
-                <h4>第22梯次後端工程師培訓學員</h4>
-                <div class="box">
-                    <ul>
-                        <li>運用C#與ASP.NET相關架構及Microsoft SQL Server，以實戰完成3個小型專案，專案皆以Git執行版本控管。</li>
-                        <li>培訓後期將與前端工程師協作中大型專題，以後端角色完成Web API開發與資料庫建置和相關部署，專題以Git Flow規範版本控制及管理。</li>
-                    </ul>
-                </div>
-            </div>
 
-        </div>
     </section>
     <section class="other_info">
         <div class="other">
@@ -174,7 +140,7 @@
             <span>程式語言</span>
             <p>Python, R, SQL, C#</p>
             <span>技術及工具</span>
-            <p>MS SQL Server, .NET, Git, Scikit-learn, PySpark</p>
+            <p>MS SQL Server, ASP.NET, Git, Pandas, Scikit-learn, Neovim, Azure</p>
         </div>
         <div class="other">
             <h2><img src="assets/language.png" alt="languages"> 語言 Languages</h2>

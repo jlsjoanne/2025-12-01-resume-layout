@@ -219,3 +219,104 @@ section h2{
         margin-right: 0;
     }
 }
+
+@media print{
+    @page{
+        size: A4;
+        margin: 7mm 8mm 7mm;
+    }
+
+    body{
+        margin: 0;
+        font-size: 13.5px;
+        line-height: 1.2;
+        letter-spacing: 0;
+        color: #111;
+    }
+
+    h2{
+        font-size: 17px;
+        line-height: 1.08;
+        margin-bottom: 2px;
+    }
+
+    h3{
+        font-size: 14.8px;
+        margin-bottom: 1px;
+    }
+
+    h4{
+        font-size: 13.5px;
+        margin-bottom: 1px;
+    }
+
+    header{
+        margin-bottom: 5px;
+    }
+
+    header p{
+        margin-bottom: 1px;
+    }
+
+    .contact{
+        gap: 3px 10px;
+        margin-bottom: 5px;
+    }
+
+    .contact .box{
+        margin-right: 8px;
+    }
+
+    .contact .box img{
+        max-width: 12px;
+    }
+
+    .contact .box a{
+        font-size: 11.5px;
+    }
+
+    section h2{
+        margin-top: 7px;
+        margin-bottom: 4px;
+        padding-bottom: 2px;
+    }
+
+    .detail_content{
+        margin-bottom: 3px;
+    }
+
+    .time{
+        width: 96px;
+        min-width: 96px;
+        margin-right: 9px;
+        font-size: 11.5px;
+        line-height: 1.12;
+    }
+
+    .info{
+        width: auto;
+        flex: 1;
+    }
+
+    .info .box{
+        margin: 2px 0 3px 10px;
+    }
+
+    ul{
+        margin-left: 14px;
+    }
+
+    li{
+        line-height: 1.16;
+        margin-bottom: 0;
+    }
+
+    .other_info{
+        margin-bottom: 0;
+        gap: 28px;
+    }
+
+    .other{
+        margin-right: 20px;
+    }
+}
