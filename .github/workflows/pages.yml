@@ -25,10 +25,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v7
 
+      - name: Prepare static site
+        run: |
+          mkdir -p dist
+          cp index.html styles.css dist/
+          cp -R assets dist/
+          find dist -name .DS_Store -delete
+          touch dist/.nojekyll
+
       - name: Upload static site
         uses: actions/upload-pages-artifact@v5
         with:
-          path: .
+          path: dist
+          include-hidden-files: true
 
       - name: Deploy to GitHub Pages
         id: deployment
