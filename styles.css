@@ -234,6 +234,11 @@ section h2{
         color: #111;
     }
 
+    a,
+    a:visited{
+        text-decoration: none;
+    }
+
     h2{
         font-size: 17px;
         line-height: 1.08;
@@ -273,6 +278,8 @@ section h2{
 
     .contact .box a{
         font-size: 11.5px;
+        color: #4a4a4a;
+        text-decoration: none;
     }
 
     section h2{
@@ -291,6 +298,7 @@ section h2{
         margin-right: 9px;
         font-size: 11.5px;
         line-height: 1.12;
+        color: #4a4a4a;
     }
 
     .info{
