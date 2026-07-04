@@ -125,6 +125,7 @@ header{
 .contact .box a{
     vertical-align:middle;
     color: grey;
+    text-decoration: none;
 }
 
 .contact .box a:hover{
