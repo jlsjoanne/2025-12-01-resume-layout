@@ -81,10 +81,10 @@
                 <h4>StyCue 穿搭社群委託平台｜後端｜Web API, SQL Server, Azure</h4>
                 <div class="box">
                     <ul>
-                        <li>設計與建立 Microsoft SQL Server 資料模型與 EF Core Migrations，實作委託生命週期及可追溯的點數交易、獎勵與退款流程。</li>
-                        <li>建置 SearchDocument 全文搜尋，整合貼文與委託資料，支援相關性排序與分頁查詢。</li>
-                        <li>ASP.NET Core Web API 專案採 Controller-based 架構，以 Controller、Service Layer 與 DTO 分層管理 API 合約與商業邏輯；依 RESTful 原則完成 16 個 Controller、63 條 API。</li>
-                        <li>整合 JWT、Google 登入與 Azure Blob Storage，完成帳號驗證與私有圖片存取機制，並部署至 Azure VM。</li>
+                        <li>設計 SQL Server 資料模型與 EF Core Migrations，建立委託、積分錢包與交易明細，支援加碼、退款及獎勵結算的可追溯資料流程。</li>
+                        <li>針對積分餘額與獎勵結算的併發交易導入資料庫併發控制及衝突處理，避免重複寫入、餘額覆寫與重複結算，確保帳務資料一致性。</li>
+                        <li>以 ASP.NET Core Background Service 週期性執行委託到期檢查與逾期結算，讓到期流程不必等待使用者操作也能持續處理。</li>
+                        <li>建置 SearchDocument 統一貼文與委託的搜尋讀模型，支援同義詞擴展、相關性排序及分頁查詢。</li>
                     </ul>
                 </div>
             </div>
