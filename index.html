@@ -9,9 +9,10 @@
 <body>
     <header>
         <h2>蕭主安 Joanne Hsiao</h2>
-        <p>Rice University 計算科學與工程碩士、國立政治大學統計學系學士，具資料科學、演算法與 AI/ML 相關訓練。</p>
-        <p>具資料處理與分析工作經驗，曾以 Python、R 與 SQL Server 建立跨來源自動化資料蒐集流程，完成資料整併、統計分析及機器學習模型建置。</p>
-        <p>近期完成七個多月的後端工程師培訓，並以 C#、ASP.NET 與 SQL Server 實作資料模型、API、背景排程及系統部署。</p>
+        <p class="target-title">資料工程師｜資料整併、資料蒐集自動化與 SQL 處理</p>
+        <p>Rice University 計算科學與工程碩士，具統計與資料處理背景。</p>
+        <p>曾以 Python 與 SQL Server 處理跨來源資料，建立自動化蒐集、資料整併與品質驗證流程。</p>
+        <p>具後端系統實作經驗，能將資料異動轉為可追蹤的資料模型與處理流程。</p>
         <div class="contact">
             <div class="box">
                 <img src="./assets/mail.png" alt="email">
@@ -43,12 +44,6 @@
             <div class="info">
                 <h3>Rice University 萊斯大學</h3>
                 <h4>Master of Computational Science and Engineering</h4>
-                <div class="box">
-                    <ul>
-                        <li>相關課程：Algorithms, Data Science, Information Retrieval, Neural Machine Learning, Deep Learning</li>
-                        <li>課程專題：使用 R 處理缺失值、類別資料轉換與數值縮放，並以矩陣運算實作倒傳遞類神經網路二元分類模型；針對類別不平衡資料，以敏感度、特異度與 AUC 評估模型表現。</li>
-                    </ul>
-                </div>
             </div>
         </div>
         <div class="detail_content">
@@ -72,7 +67,7 @@
                 <h4>中央研究院 調查研究專題中心</h4>
                 <div class="box">
                     <ul>
-                        <li>以 Python、BeautifulSoup 與 Selenium 建立自動化資料蒐集流程，跨 6 個線上資料庫擷取並彙整引用單位著作紀錄，較往年節省 30% 作業時間。</li>
+                        <li>以 Python 的 BeautifulSoup 與 Selenium 建立自動化資料蒐集流程，彙整 6 個線上資料庫的引用單位著作紀錄，節省 30% 作業時間。</li>
                     </ul>
                 </div>
             </div>
@@ -86,7 +81,8 @@
                 <h4>國立中山大學海洋事務研究所</h4>
                 <div class="box">
                     <ul>
-                        <li>使用 R 分析漁獲資料，透過 k-means 分群魚種與捕獲地點，並以線性模型評估漁獲量變化，產出 10 個以上視覺化圖表用於研究報告。</li>
+                        <li>使用 R 分析漁獲資料，透過 k-means 分群魚種與捕獲地點。</li>
+                        <li>以線性模型評估漁獲量變化，產出 10 個以上視覺化圖表用於研究報告。</li>
                     </ul>
                 </div>
             </div>
@@ -100,8 +96,9 @@
                 <h4>國立臺灣大學計量理論與應用研究中心</h4>
                 <div class="box">
                     <ul>
-                        <li>使用 Python（Pandas、Scikit-learn）讀取 SQL Server 的論文與專利資料，以決策樹模型判斷同名作者是否為同一人並協助資料整併，測試資料正確率達 96%。</li>
-                        <li>依學術能力指標分析 SQL Server 論文資料，協助 2 個機構比較與目標機構的學術實力及排名差距，並提供報告。</li>
+                        <li>以 Python 的 Pandas 與 Scikit-learn 處理 SQL Server 論文與專利資料。</li>
+                        <li>以決策樹模型協助同名作者資料整併，測試正確率達 96%。</li>
+                        <li>依學術能力指標比較 2 個機構與目標機構的排名差距，並提供分析報告。</li>
                     </ul>
                 </div>
             </div>
@@ -115,21 +112,30 @@
             </div>
             <div class="info">
                 <h3>火箭隊培訓營｜後端工程師培訓暨專題實作</h3>
-                <h4>StyCue 穿搭社群委託平台｜團隊協作後端開發｜C#, ASP.NET Core Web API, EF Core, SQL Server, Azure</h4>
+                <h4>StyCue 穿搭社群委託平台｜資料模型與後端開發</h4>
+                <p class="project-links"><a href="https://github.com/jlsjoanne/StyCue">GitHub：StyCue 專案</a>｜<a href="https://stycue.rocket-coding.com/api-docs/">API 文件</a></p>
                 <div class="box">
                     <ul>
-                        <li>將委託生命週期、積分錢包及交易明細等需求轉換為 SQL Server 資料模型與 RESTful API，並以 Controller、Service Layer 與 DTO 分層開發。</li>
-                        <li>運用資料庫交易及 rowversion 版本檢查處理同時發生的加碼與結算操作，避免重複扣款、餘額覆寫及重複結算，維持資料一致性。</li>
-                        <li>以 ASP.NET Core Background Service 執行委託到期檢查與逾期獎勵結算，使非使用者觸發的流程也能持續處理。</li>
-                        <li>整合 JWT 驗證、Google 第三方登入、Azure Blob Storage 與 OpenAPI／Scalar 文件，支援前端串接及測試，並將服務部署於 Windows Server。</li>
+                        <li>設計積分錢包與交易紀錄，確保加碼、獎勵與退款的異動皆可追蹤。</li>
+                        <li>以資料庫交易與 rowversion 避免加碼或結算時重複扣款與餘額覆寫。</li>
+                        <li>以 Background Service 自動結算到期委託，降低人工追蹤負擔。</li>
                     </ul>
                 </div>
 
-                <h4>遊艇品牌官網與後台內容管理系統｜個人專題｜C#, ASP.NET MVC 5, EF6, SQL Server</h4>
+                <h4>遊艇品牌官網與後台系統｜個人專題</h4>
+                <p class="project-links"><a href="https://github.com/jlsjoanne/bootcamp-rocket-backend-Yacht-Project">GitHub：遊艇後台系統</a></p>
                 <div class="box">
                     <ul>
-                        <li>以 ASP.NET MVC 5 與 EF6 Code First 建置遊艇品牌官網及後台系統，完成遊艇、新聞、經銷商、會員與聯絡紀錄等模組的資料模型與 CRUD 流程，並實作搜尋、分頁及軟刪除等內容管理功能。</li>
-                        <li>設計圖片與附件上傳流程，加入檔案大小、類型與 MIME 驗證，並以 GUID 檔名及失敗清理機制維持檔案與資料庫一致性。</li>
+                        <li>設計關聯式資料模型與 CRUD 流程，支援 5 類後台內容管理功能。</li>
+                        <li>以檔案驗證與失敗清理機制，維持檔案與資料紀錄一致性。</li>
+                    </ul>
+                </div>
+
+                <h4>Disentangling Type-2 Diabetes Status with Global and Local Ancestry among Modern Hawaiians｜Rice University 課程團隊專題</h4>
+                <div class="box">
+                    <ul>
+                        <li>以 R 整合祖源、CREBRF 與健康共變數，實作直接 BP 二元分類模型。</li>
+                        <li>處理缺失值、類別轉換與數值縮放，並以敏感度、特異度與 AUC 評估不平衡資料。</li>
                     </ul>
                 </div>
             </div>
@@ -138,10 +144,10 @@
     <section class="skills">
         <h2><img src="assets/tool.png" alt="skills"> 技能 Skills</h2>
         <div class="skill-grid">
-            <p><strong>資料處理</strong><span>Python、R、Pandas、BeautifulSoup、Selenium</span></p>
-            <p><strong>資料庫</strong><span>SQL、Microsoft SQL Server、關聯式資料模型設計、資料庫交易與 rowversion 併發控制</span></p>
-            <p><strong>統計與模型</strong><span>Scikit-learn、決策樹、k-means、線性模型、類神經網路、分類模型評估</span></p>
-            <p><strong>系統開發</strong><span>C#、ASP.NET Core Web API、Entity Framework Core、RESTful API、Background Service、Git、Azure</span></p>
+            <p><strong>資料整併與自動化</strong><span>Python、Pandas、BeautifulSoup、Selenium</span></p>
+            <p><strong>資料庫與品質</strong><span>SQL、SQL Server、關聯式資料模型、資料庫交易、rowversion</span></p>
+            <p><strong>統計與分析</strong><span>R、Scikit-learn、決策樹、k-means、線性模型、模型評估</span></p>
+            <p><strong>系統支援</strong><span>C#、ASP.NET Core、Entity Framework、Background Service、Git</span></p>
         </div>
     </section>
     <section class="languages">
